@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>My Extracurriculars</title>
+<link id="style" rel="stylesheet" href="option1.css"> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body onload="start()">
+
+  <div class="topnav">
+    <ul>
+    <li><a class="rightside" onclick="style_change()">Style Toggle</a></li>
+    <li><a class="leftside" onclick="document.location='index.html'">Home</a></li>
+    <li><a class="leftside" onclick="document.location='experience.html'">Qualifications</a></li>
+    <li><a class="leftside" onclick="document.location='project.html'">Projects</a></li>
+    <li><a class="leftside" onclick="document.location='hobbies.html'">Extracurriulars</a></li>
+  </ul>
+  </div>
+
+<h1>My Extracurriulars</h1>
+
+<div class="row">
+  <div class="leftcolumn">
+  <h2>Work</h2>
+<div class="card">
+  <h3>Teaching Assistant</h3>
+
+  <p class="maintext">
+    I was a teaching assistant for the engineering physics labs. I
+    helped direct and supervise students as they collected data for
+    their lab as well as grade the lab reports when they submit them. <br><br>
+    You can read more about the class in the link below, class numbers
+    216 and 217.
+  </p>
+
+  <button class="button" onclick="document.location='https://catalog.tamu.edu/undergraduate/course-descriptions/engr/'">ENGR Course Catalog</button>
+</div><div class="card4">
+  <h3>Electrical and Computer Engineering Student Ambassador</h3>
+
+  <p class="maintext">
+    As an Electrical and Computer Engineering Student Ambassador
+    I help people with advising as well as give presentations about
+    the department. I learned a lot about communication and oral
+    presentation from this job. <br><br>
+    See more about the ambassador program below.
+  </p>
+
+  <button class="button" onclick="document.location='https://engineering.tamu.edu/electrical/advising/student-ambassadors.html#:~:text=The%20Electrical%20and%20Computer%20Engineering,as%20representatives%20for%20the%20department.'">ECEN Student Ambassador</button>
+</div></div>
+<div class="rightcolumn">
+  <h2>Service</h2>
+<div class="card5">
+  <h3>FLASH and SLAM</h3>
+
+  <p class="maintext">
+    FLASH and SLAM are organizations that help give back to the 
+    community through their own philanthropies which help victims of 
+    homelessness and abuse/ children who experience abuse or neglect
+    respectively. As well as through other organizations such as build and 
+    big event. <br><br>
+    Check out more about these organizations as well as the other organizations below.
+
+  </p>
+
+  <button class="button" onclick="document.location='https://www.aggieflash.com/'">FLASH</button>
+  <button class="button" onclick="document.location='https://www.tamuslam.org/'">SLAM</button>
+  <button class="button" onclick="document.location='https://www.buildtamu.com/'">BUILD</button>
+  <button class="button" onclick="document.location='https://bigevent.tamu.edu/'">Big Event</button>
+</div></div></div>
+  <footer>
+    <ul>
+      <li>Contact: Jdf0001045432@tamu.edu</li><br>
+      <li>Personal Github: <a href="https://github.com/Feng-Justin">https://github.com/Feng-Justin</a></li><br>
+      <li>TAMU Github: <a href="https://github.tamu.edu/jdf0001045432">https://github.tamu.edu/jdf0001045432</a></li><br>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/justin-feng-computer-engineer/">https://www.linkedin.com/in/justin-feng-computer-engineer/</a></li><br>
+    </ul>
+  </footer>
+
+  <script>
+    function style_change() { 
+      if(localStorage.getItem("stylenum") == "option1.css"){
+        document.getElementById("style").href = "option2.css";
+        localStorage.setItem("stylenum", "option2.css");
+      }else{
+        document.getElementById("style").href = "option1.css";
+        localStorage.setItem("stylenum", "option1.css");
+      }
+    }
+    function start(){
+      if(localStorage.getItem("stylenum") != null){
+        document.getElementById("style").href = localStorage.getItem("stylenum");
+      }else{
+        document.getElementById("style").href = "option1.css";
+        localStorage.setItem("stylenum", "option1.css");
+      }
+    }
+  </script>
+
+</body>
+</html>

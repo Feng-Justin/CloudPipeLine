@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>My Projects</title>
+<link id="style" rel="stylesheet" href="option1.css"> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body onload="start()">
+
+  <div class="topnav">
+    <ul>
+    <li><a class="rightside" onclick="style_change()">Style Toggle</a></li>
+    <li><a class="leftside" onclick="document.location='index.html'">Home</a></li>
+    <li><a class="leftside" onclick="document.location='experience.html'">Qualifications</a></li>
+    <li><a class="leftside" onclick="document.location='project.html'">Projects</a></li>
+    <li><a class="leftside" onclick="document.location='hobbies.html'">Extracurriulars</a></li>
+  </ul>
+  </div>
+
+<h1>My Projects</h1>
+  <h2>These are my past projects</h2>
+  <div class="row"><div class="leftcolumn"><div class="card">
+  <h3>Convolution Operation Modeler</h3>
+  <p class="maintext">
+    This is a python project that is on a google colab. It allows 
+    the user to create any two functions and it shows a the two 
+    functions being visually convolved together. It was a project 
+    I made for a signals class and it took approximitly 5 hours to 
+    create.
+  </p>
+  <button class="button" onclick="document.location='https://colab.research.google.com/drive/1Z1HPbIeShTFJus0bn-NGxaAMziMAgUnO?usp=sharing'">Try it yourself</button>
+  </div></div>
+  <div class="rightcolumn"><div class="card4">
+  <h3>This Website</h3>
+  <p class="maintext">
+    This is a HTML project that uses a little bit of CSS and javascript  
+    as well. It is an online website that allows you to see who
+    I am, my qualifications, projects and what I do in my spare time.
+    This was a project 
+    I made for a software development class and it took approximitly 2 weeks to 
+    learn html, CSS and javascript as well as create this website. <br><br>
+    Check it out on my github:
+  </p>
+  <button class="button" onclick="document.location='https://github.tamu.edu/jdf0001045432'">Take a look</button>
+</div></div></div>
+  <footer>
+    <ul>
+      <li>Contact: Jdf0001045432@tamu.edu</li><br>
+      <li>Personal Github: <a href="https://github.com/Feng-Justin">https://github.com/Feng-Justin</a></li><br>
+      <li>TAMU Github: <a href="https://github.tamu.edu/jdf0001045432">https://github.tamu.edu/jdf0001045432</a></li><br>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/justin-feng-computer-engineer/">https://www.linkedin.com/in/justin-feng-computer-engineer/</a></li><br>
+    </ul>
+  </footer>
+
+  <script>
+    function style_change() { 
+      if(localStorage.getItem("stylenum") == "option1.css"){
+        document.getElementById("style").href = "option2.css";
+        localStorage.setItem("stylenum", "option2.css");
+      }else{
+        document.getElementById("style").href = "option1.css";
+        localStorage.setItem("stylenum", "option1.css");
+      }
+    }
+    function start(){
+      if(localStorage.getItem("stylenum") != null){
+        document.getElementById("style").href = localStorage.getItem("stylenum");
+      }else{
+        document.getElementById("style").href = "option1.css";
+        localStorage.setItem("stylenum", "option1.css");
+      }
+    }
+  </script>
+  
+</body>
+</html>

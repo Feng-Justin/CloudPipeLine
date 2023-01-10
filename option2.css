@@ -1,0 +1,158 @@
+body {
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(skyblue, pink, yellow);
+  text-align: center;
+  margin: 0;
+  font-family:'Arial';
+  
+}
+h1 {
+  color: orange;
+  text-shadow: 2px 2px 4px orangered;
+  padding-right: 6%;
+}
+h2 {
+  color: orange;
+  padding-right: 6%;
+}
+h3 {
+  color: orangered;
+  text-align: center;
+}
+.maintext {
+  background-color: whitesmoke;
+  border: 1px solid black;
+  padding: 30px;
+  border-radius: 30px;
+  color: skyblue;
+}
+td{
+  color: black;
+  text-align: center;
+}
+.button {
+  background-color: whitesmoke;
+  border-radius: 14px;
+  border: 1px solid black;
+  color: skyblue;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover{
+  color: gray;
+}
+
+.button:active{
+  background-color: grey;
+  color: skyblue;
+}
+
+.topnav {
+  background-color: transparent;
+  overflow-x: hidden;
+  position: fixed;
+  text-align: right;
+  right: 0;
+  height: 100%;
+  display: block;
+  background-color: whitesmoke;
+  border-left: 2px solid black;
+}
+
+.topnav ul{
+  list-style-type: none;
+}
+.topnav li{
+  padding-bottom: 15px;
+}
+
+.topnav a {
+  background-color: transparent;
+  color: orangered;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.topnav a:hover{
+  color: orange;
+}
+
+.leftside {
+  padding: 20px 5px;
+} 
+
+.rightside {
+  padding: 20px 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 120px;
+  padding: 3px;
+  background-color: greenyellow;
+  color: orangered;
+  border-top: 3px solid brown;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer a {
+  color: skyblue;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 42%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 42%;
+  margin-right: 12%;
+  padding-left: 4%;
+}
+
+/* Add a card effect for articles */
+.card {
+  padding: 20px;
+  margin-top: 10px;
+}
+.card2 {
+  padding: 20px;
+  margin-top: 80px;
+}
+.card3 {
+  padding: 20px;
+  margin-top: 550px;
+}
+.card4 {
+  padding: 120px;
+  margin-top: 20px;
+}
+.card5 {
+  padding: 20px;
+  margin-top: 210px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+table{
+  width: 88%;
+}

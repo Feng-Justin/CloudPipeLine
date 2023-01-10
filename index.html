@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Justin Feng</title>
+<link id="style" rel="stylesheet" href="option1.css"> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body onload="start()">
+
+<div class="topnav">
+  <ul>
+  <li><a class="rightside" onclick="style_change()">Style Toggle</a></li>
+  <li><a class="leftside" onclick="document.location='index.html'">Home</a></li>
+  <li><a class="leftside" onclick="document.location='experience.html'">Qualifications</a></li>
+  <li><a class="leftside" onclick="document.location='project.html'">Projects</a></li>
+  <li><a class="leftside" onclick="document.location='hobbies.html'">Extracurriulars</a></li>
+</ul>
+</div>
+
+<div class="row">
+<div class="leftcolumn">
+<div class="card"><h1 style = "font-size: 80px;">Justin Feng</h1>
+
+<p class="maintext">
+  Hi, my name is Justin Feng, I'm a computer engineer with a minor in 
+  cybersecurity and mathematics. I love learning about new things and 
+  technologies as well as helping others learn and grow along with me.
+  I have a ton of analog, digital and software experience loving all 
+  of it. I'm a hard worker who is always eager to make the best product 
+  I can for the people I'm working for. I'm a great communicator who 
+  works great either on a team or leading one. <br><br>
+  Throughout high school I loved math and science and so engineering felt like the natural 
+  choice of major. Even in high school I had some experience in digital design due to a class 
+  about that exact topic. From then on, I knew I wanted to be an electrical engineer. But when 
+  I got to college, I had to take an intro python class, which opened me up to the world of 
+  software. After that I decided I wanted to learn both hardware and software, so my major 
+  became computer engineering where I could learn both sides of computers and technology. 
+  Since then, I have been exposed to tons of new subjects and subfields within computer engineering 
+  all of which I hope to one day get to know very well.<br><br>
+  Other than academics, I also love hanging out with friends in my free time. 
+  I enjoy playing sports like soccer and volleyball as well as board/card games such as catan, 
+  ticket to ride, exploding kittens, chess and pandemic. I really love games that make you 
+  think ahead and use your brain which is why I loved engineering and computer science. They present a problem which makes me think to find the most efficient way to solve it. <br><br>
+  Continue to read through my website to learn more about me and what I've done.
+</p></div>
+
+<div class="card2"><h2>Qualifications</h2>
+
+<p class="maintext">
+  I've had a lot of different experiences from my involvement in research and clubs. 
+  I have done research with professors on deep learning and chip design. I have learned a 
+  lot with IEEE and the cybersecurity club through events. <br><br>
+  Click here to see the qualifications I have.
+  
+</p>
+
+<button class="button" onclick="document.location='experience.html'">See more</button>
+</div></div>
+
+<div class="rightcolumn"><div class="card3"><h2>Projects</h2>
+
+<p class="maintext">
+  I've worked on a few projects in the past using python and html as 
+  well as have plans to make a lot more in the future. <br><br>
+  Click here to see the projects I've worked on.
+
+</p>
+
+<button class="button" onclick="document.location='project.html'">See more</button>
+</div>
+
+<div class="card4"><h2>Extracurriculars</h2>
+
+<p class="maintext">
+  Other than classes, there are a lot of activities I've 
+  participated in from service organizations to being a teaching assistant. <br><br>
+  Click here to see the extracurriulars I've done.
+</p>
+
+<button class="button" onclick="document.location='hobbies.html'">See more</button>
+</div>
+</div>
+</div>
+<footer>
+  <ul>
+    <li>Contact: Jdf0001045432@tamu.edu</li><br>
+    <li>Personal Github: <a href="https://github.com/Feng-Justin">https://github.com/Feng-Justin</a></li><br>
+    <li>TAMU Github: <a href="https://github.tamu.edu/jdf0001045432">https://github.tamu.edu/jdf0001045432</a></li><br>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/justin-feng-computer-engineer/">https://www.linkedin.com/in/justin-feng-computer-engineer/</a></li><br>
+  </ul>
+</footer>
+
+<script>
+  function style_change() { 
+    if(localStorage.getItem("stylenum") == "option1.css"){
+      document.getElementById("style").href = "option2.css";
+      localStorage.setItem("stylenum", "option2.css");
+    }else{
+      document.getElementById("style").href = "option1.css";
+      localStorage.setItem("stylenum", "option1.css");
+    }
+  }
+  function start(){
+    if(localStorage.getItem("stylenum") != null){
+      document.getElementById("style").href = localStorage.getItem("stylenum");
+    }else{
+      document.getElementById("style").href = "option1.css";
+      localStorage.setItem("stylenum", "option1.css");
+    }
+  }
+</script>
+
+</body>
+</html>

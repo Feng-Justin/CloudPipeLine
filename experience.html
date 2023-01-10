@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>My Qualifications</title>
+<link id="style" rel="stylesheet" href="option1.css"> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body onload="start()">
+
+  <div class="topnav">
+    <ul>
+    <li><a class="rightside" onclick="style_change()">Style Toggle</a></li>
+    <li><a class="leftside" onclick="document.location='index.html'">Home</a></li>
+    <li><a class="leftside" onclick="document.location='experience.html'">Qualifications</a></li>
+    <li><a class="leftside" onclick="document.location='project.html'">Projects</a></li>
+    <li><a class="leftside" onclick="document.location='hobbies.html'">Extracurriulars</a></li>
+  </ul>
+  </div>
+
+<h1>My Qualifications</h1>
+
+  <h2>Technical Skills</h2>
+
+  <table>
+    <tr>
+      <td class="skill">C++</td>
+      <td class="skill">Python</td>
+      <td class="skill">ARM v8</td>
+      <td class="skill">X86</td>
+    </tr>
+    <tr>
+      <td class="skill">CSS</td>
+      <td class="skill">Linux</td>
+      <td class="skill">HTML</td>
+      <td class="skill">SQL</td>
+    </tr>
+    <tr>
+      <td class="skill">Deep Learning</td>
+      <td class="skill">Verilog</td>
+      <td class="skill">Digital Design</td>
+      <td class="skill">Analog Design</td>
+    </tr>
+  </table>
+
+<div class="row">
+  <div class="leftcolumn">
+    
+  <h2>Research</h2>
+<div class="card4">
+  <h3>Chip Design</h3>
+
+  <p class="maintext">
+    This research was over the hardware for deep learning. 
+    The chip has a systolic array of processing elements that 
+    preformed the required calculations for more efficient deep 
+    learning. My part of that was placement, I created c++ code 
+    that took in a Verilog netlist file as well as a DEF file of 
+    the processing elements and made a def file with the most 
+    optimal placements for the DEF file. It required about parsing 
+    through files, graphs and communication with the other people 
+    working on other parts of the project.
+  </p>
+</div></div>
+<div class="rightcolumn">
+  <h2>Clubs</h2>
+<div class="card">
+  <h3>Cybersecurity Club</h3> 
+
+  <p class="maintext">
+    In the cybersecurity club I have learned a lot about cybersecurity
+    that really pairs well with most of my classes, recently I have
+    learning more about penetration testing and different
+    vulnerabilities a system can have. It has been a lot of
+    fun between the technical workshops and the CTFs and I can
+    not wait to do more. <br><br>
+    Learn more about it below.
+  </p>
+
+  <button class="button" onclick="document.location='https://cybr.club/'">Cybersecurity Club</button>
+</div>
+<div class="card">
+  <h3>Autonobot Team</h3>
+
+  <p class="maintext">
+    This team was dedicated to teaching people about deep learning
+    and what was required to make models that could identity objects
+    in pictures, such as a cone in front of a car. It was a lot of fun
+    working on projects, teaching others and learning about fun tools
+    that helped along the way.
+  </p>
+</div>
+<div class="card">
+  <h3>IEEE</h3>
+
+  <p class="maintext">
+    IEEE has been a great place not just to meet friends who are
+    mostly in the same major but has also been a great source for
+    workshops and company visits that are a lot of fun to go to. I
+    am always excited to see what new things I can learn next. <br><br>
+    Learn more about IEEE below.
+  </p>
+
+  <button class="button" onclick="document.location='https://ieee-tamu.org/'">IEEE</button>
+</div></div></div>
+  <h2>Resume</h2>>
+
+  <a href="." download="resume.pdf">
+    <button class="button">Download</button>
+  </a>
+
+  <footer>
+    <ul>
+      <li>Contact: Jdf0001045432@tamu.edu</li><br>
+      <li>Personal Github: <a href="https://github.com/Feng-Justin">https://github.com/Feng-Justin</a></li><br>
+      <li>TAMU Github: <a href="https://github.tamu.edu/jdf0001045432">https://github.tamu.edu/jdf0001045432</a></li><br>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/justin-feng-computer-engineer/">https://www.linkedin.com/in/justin-feng-computer-engineer/</a></li><br>
+    </ul>
+  </footer>
+
+  <script>
+    function style_change() { 
+      if(localStorage.getItem("stylenum") == "option1.css"){
+        document.getElementById("style").href = "option2.css";
+        localStorage.setItem("stylenum", "option2.css");
+      }else{
+        document.getElementById("style").href = "option1.css";
+        localStorage.setItem("stylenum", "option1.css");
+      }
+    }
+    function start(){
+      if(localStorage.getItem("stylenum") != null){
+        document.getElementById("style").href = localStorage.getItem("stylenum");
+      }else{
+        document.getElementById("style").href = "option1.css";
+        localStorage.setItem("stylenum", "option1.css");
+      }
+    }
+  </script>
+
+</body>
+</html>

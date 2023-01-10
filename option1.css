@@ -1,0 +1,117 @@
+body {
+  background-color: rgb(80, 0, 0);
+  text-align: center;
+  margin: 0;
+  font-family:'Arial';
+}
+h1 {
+  color: grey;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+}
+h2 {
+  color: darkgoldenrod;
+  text-align: center;
+  padding-top: 40px;
+}
+h3 {
+  color: grey;
+  text-shadow: none;
+  text-align: center;
+  padding-top: 40px;
+}
+.maintext {
+  color: peachpuff;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: maroon;
+  border: 5px solid black;
+  padding: 30px;
+  border-radius: 14px;
+}
+td{
+  color: peachpuff;
+  text-align: center;
+}
+.button {
+  background-color: maroon;
+  border-radius: 14px;
+  border: 3px solid black;
+  color: peachpuff;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover{
+  color: gray;
+}
+
+.button:active{
+  background-color: rgba(128, 0, 0, 0.5);
+  color: grey;
+}
+
+.topnav {
+  background-color: maroon;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  border: 3px solid black;
+}
+
+.topnav ul{
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+}
+
+.topnav a {
+  background-color: maroon;
+  color: peachpuff;
+  text-align: center;
+  padding: 14px 16px ;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.topnav a:hover{
+  color: gray;
+}
+
+.leftside {
+  float: left;
+  padding: 20px 5px;
+} 
+
+.rightside {
+  float: right;
+  padding: 20px 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 3px;
+  background-color: maroon;
+  color: peachpuff;
+  border-top: 3px solid black;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer a {
+  color: darkgoldenrod;
+}
+
+table{
+  width: 100%;
+}
